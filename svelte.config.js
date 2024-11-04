@@ -7,7 +7,7 @@ export default {
       fallback: '200.html'
     }),
     paths: {
-      base: '/Masodik'
+      base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
     }
   }
 };
